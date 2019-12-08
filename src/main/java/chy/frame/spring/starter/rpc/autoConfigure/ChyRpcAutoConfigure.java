@@ -25,7 +25,6 @@ public class ChyRpcAutoConfigure {
         ChyRpcApplication chyRpcApplication = new ChyRpcApplication(rpcProperties.getZookeepeer());
         chyRpcApplication.setPort(rpcProperties.getPort());
         chyRpcApplication.setIp(rpcProperties.getIp());
-        System.out.println("开始了自动配置");
         return chyRpcApplication;
     }
 

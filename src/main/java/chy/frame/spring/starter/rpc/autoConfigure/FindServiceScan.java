@@ -17,16 +17,12 @@ import org.springframework.core.type.StandardAnnotationMetadata;
 
 import java.util.Set;
 
-public class FindServiceScan implements ImportBeanDefinitionRegistrar, ResourceLoaderAware, BeanFactoryAware {
+public class FindServiceScan implements ImportBeanDefinitionRegistrar, ResourceLoaderAware {
 
 
-    BeanFactory beanFactory;
     ResourceLoader resourceLoader;
 
-    @Override
-    public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-        this.beanFactory = beanFactory;
-    }
+
 
     @Override
     public void setResourceLoader(ResourceLoader resourceLoader) {
